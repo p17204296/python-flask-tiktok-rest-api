@@ -29,12 +29,12 @@ for i in range(len(data)):
 # print("Video Deleted")
 
 input("Input to Get")
-response = requests.get(BASE + "video/6")
+response = requests.get(BASE + "video/0")
 print(response.json())
 
 
 input("Input to Update")
-updateData = {"likes": 823}
+updateData = {"likes": 823, "name":"HI Nick"}
 
 response = requests.patch(
     BASE + "video/0", json=updateData
